@@ -1,0 +1,144 @@
+body {
+  background-image: url("http://pic.survivalhost.org/images/2020/12/11/pexels-miguel-a-padrinan-2553791.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #f9e0ae;
+}
+
+hr {
+  height: 0px;
+  width: 5%;
+  border-style: dotted none none;
+  border-color: white;
+  border-width: 6px;
+}
+table.center {margin-left: auto;
+margin-right: auto;}
+
+
+table {
+  background-color: white;
+  border-style: outset none none none;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+  opacity: 0.9;
+}
+p{background-color: white;
+border-style: outset none none none;
+border-top-left-radius: 0.5em;
+border-top-right-radius: 0.5em;
+border-bottom-right-radius: 0.5em;
+border-bottom-left-radius: 0.5em;
+width: 60%;
+opacity: 0.9;}
+p.left{background-color: white;
+width: 15%;}
+h1 {
+  color:#111d5e;
+}
+h1.center {
+  color: #dd2c00;
+  background-color: #66bfbf; }
+  h2 {
+    color:#111d5e;
+  }
+  h2.right {
+      background-color: white;
+      border-style: outset;
+      border-top-left-radius: 1em;
+      border-top-right-radius: 1em;
+      border-bottom-right-radius: 1em;
+      border-bottom-left-radius: 1em;
+      opacity: 0.9;
+      width:20%;
+      height: 25px;
+    }
+
+
+h3 {
+  background-color: white;
+  border-style: outset;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+  opacity: 0.9;
+  width: 40%;
+  height: 25px;
+}
+h3.left {
+    background-color: white;
+    border-style: outset;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+    opacity: 0.9;
+    width:20%;
+    height: 25px;
+  }
+  h3.right{
+    border-style: none none none;
+    text-align: center;
+
+  }
+
+ol {
+  background-color: white;
+  border-style: outset none none;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+  opacity: 0.9;
+  height: 100%;
+  width: 65%
+}
+ul {
+  background-color: white;
+  border-style: none none none;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+  opacity: 0.9;
+
+}
+li {
+  color:black;
+  background-color: white;
+  border-style: none none none;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+  opacity: 1.0;
+
+}
+h1.center {
+  background-color: #66bfbf; }
+
+
+button.left{
+  position:absolute;
+  left:100em;
+  top:0em;
+background-color: white;
+border-style: none none none;
+border-top-left-radius: 1em;
+border-top-right-radius: 1em;
+border-bottom-right-radius: 1em;
+border-bottom-left-radius: 1em;
+}
+button.right{
+  background-color: white;
+  border-style: none none none;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+
+}
