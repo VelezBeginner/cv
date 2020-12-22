@@ -5,9 +5,51 @@
   <meta charset="utf-8">
   <title>@Paul's Personal Site</title>
   <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
+<style>
+  #expand-btn {
+      margin: 0 3px;
+      display: inline-block;
+      font: 12px / 13px "Lucida Grande", sans-serif;
+      text-shadow: rgba(255, 255, 255, 0.4) 0 1px;
+      padding: 3px 6px;
+      border: 1px solid rgba(0, 0, 0, 0.6);
+      background-color: white;
+      cursor: default;
+      border-radius: 3px;
+      box-shadow: rgba(255, 255, 255, 0.4) 0 1px, inset 0 20px 20px -10px white;
+  }
+  label {
+    position: absolute;
+ right:65%
 
+
+  }
+
+  #isexpanded:checked ~ #expand-btn, #isexpanded:checked ~ * #expand-btn {
+      background: #B5B5B5;
+      box-shadow: inset rgba(0, 0, 0, 0.4) 0 -5px 12px, inset rgba(0, 0, 0, 1) 0 1px 3px, rgba(255, 255, 255, 0.4) 0 1px;
+  }
+
+  #isexpanded, .expandable {
+      display: none;
+  }
+
+  #isexpanded:checked ~ * li.expandable {
+      display: table-row;
+      background: white;
+
+  }
+
+  #isexpanded:checked ~ li.expandable, #isexpanded:checked ~ * li.expandable {
+      display: block;
+
+  }
+
+</style>
+</head>
+
+<body>
+<input type="checkbox" id="isexpanded">
   <table cellspacing="20">
     <tr>
       <td> <img src="http://pic.survivalhost.org/images/2020/12/03/Foto2020.jpg" alt="Paul Prischepa profile picture"></td>
@@ -17,9 +59,9 @@
 
 
         <strong>Я хочу изучать</strong> <b>информатику</b><br><br>
-         <a href="https://velezbeginner.github.io/cv/Über-mich.html"><u><strong>Über mich</strong></u></a>&nbsp;&nbsp;&nbsp;
-         <a href="https://velezbeginner.github.io/cv/contact-me.html"> <strong> Kontaktinformation</strong></a>&nbsp;&nbsp;&nbsp;
-         <a href="https://velezbeginner.github.io/cv/Meine-Ziele.html"> <u> <strong>Meine Ziele</strong> </u> </a>
+         <a href="C:\Users\paulp\Desktop\UDEMY Paul\Atom Web Development\HTML - Personal Site\Über-mich.html"><u><strong>Über mich</strong></u></a>&nbsp;&nbsp;&nbsp;
+      <a href="C:\Users\paulp\Desktop\UDEMY Paul\Atom Web Development\HTML - Personal Site\contact-me.html"> <strong> Kontaktinformation</strong></a>&nbsp;&nbsp;&nbsp;
+         <a href="C:\Users\paulp\Desktop\UDEMY Paul\Atom Web Development\HTML - Personal Site\Meine-Ziele.html"> <u> <strong>Meine Ziele</strong> </u> </a>
 
       </td>
     </tr>
@@ -49,8 +91,10 @@
           Gerade das Buch Entwurfsmuster hat mir die Materie verständlicher erklärt, als das Standardwerk, das häufig empfohlen wird.</li>
       </ul><br>
 
+      <p class="erweitern"><label for="isexpanded" id="expand-btn">ERWEITERN</label></p><br>
 
-    <li><strong><a href="https://www.amazon.de/Softwareentwicklung-kompakt-verst%C3%A4ndlich-Softwaresysteme-entstehen-ebook/dp/B00F79PZPY">Softwareentwicklung kompakt und verständlich von Rainer Kollmeier</a></strong>
+
+    <li class="expandable"><strong><a href="https://www.amazon.de/Softwareentwicklung-kompakt-verst%C3%A4ndlich-Softwaresysteme-entstehen-ebook/dp/B00F79PZPY">Softwareentwicklung kompakt und verständlich von Rainer Kollmeier</a></strong>
       <ul>
         <li>Als Anwendungsentwickler ist Softwareentwicklung kompakt und verständlich eines der wichtigsten Bücher,<br>
           um zu den Prozess Software-Entwicklung von Anfang bis Ende zu verstehen.<br>
@@ -60,7 +104,7 @@
       </ul><br>
 
 
-    <li><strong><a
+    <li class="expandable"><strong><a
           href="https://www.amazon.de/s?k=it-handbuch+f%C3%BCr+fachinformatiker&adgrpid=74009706427&hvadid=391553558319&hvdev=c&hvlocphy=9041604&hvnetw=g&hvqmt=e&hvrand=4879970989450206063&hvtargid=kwd-364822818437&hydadcr=27989_1978138&tag=googhydr08-21&ref=pd_sl_8yi4zir59b_e">IT-Handbuch
           für Fachinformatiker</a></strong>
       <ul>
@@ -74,7 +118,7 @@
       </ul><br>
 
 
-    <li><strong><a href="https://www.rheinwerk-verlag.de/objektorientierte-programmierung-das-umfassende-handbuch/">Objektorientierte Programmierung</a></strong>
+    <li class="expandable"><strong><a href="https://www.rheinwerk-verlag.de/objektorientierte-programmierung-das-umfassende-handbuch/">Objektorientierte Programmierung</a></strong>
       <ul>
         <li>Objektorientierte Programmierung ist das A und O.<br>
           Wer nicht weiß, was OOP bedeutet, sollte schleunigst sich mit diesem OpenBook von Galileo Computing beschäftigen. Es erklärt worauf es ankommt, wie z.B. dem Geheimnis-Prinzip.<br>
@@ -84,7 +128,7 @@
       </ul><br>
 
 
-    <li><strong> <s><a href="https://www.chip.de/downloads/eBook-Sicherheit-im-Internet_33361721.html">Sicherheit im Internet</a></s></strong>
+    <li class="expandable"><strong> <s><a href="https://www.chip.de/downloads/eBook-Sicherheit-im-Internet_33361721.html">Sicherheit im Internet</a></s></strong>
       <ul>
         <li>Ebenfalls ein OpenBook, das jeder Azubis bis zum Anfang des zweiten Lehrjahres gelesen haben sollte.<br>
           Hier wird einem bewusst, dass bspw. der Absender einer E-Mail nicht der Echte sein muss und wie einfach E-Mails mitgelesen werden können.<br>
@@ -95,6 +139,7 @@
 
   </ol>
   <hr>
+
 
 </body>
 
