@@ -201,6 +201,6 @@ h1.center {
 
 }
 
-    label {
+    label #isexpanded {
       position: absolute;
     right:65%
