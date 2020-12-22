@@ -201,6 +201,6 @@ h1.center {
 
 }
 
-    label #isexpanded {
+    label:not(.contactme) #isexpanded {
       position: absolute;
     right:65%
